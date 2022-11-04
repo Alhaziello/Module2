@@ -1,13 +1,97 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="description" content="This is my webpage">
+    <meta name="keywords" content="Great, HelloWorld, Awesome">
+    <meta name="author" content="Antonio Bartone">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+      table, th, td {
+          border: 1px solid black;
+      }
+        </style>
   </head>
+  <nav>
+    <!-- works like <a href="/index.html">Home</a> -->
+    <a href="./index.html">Home</a>
+    <a href="./form.html">Form</a>
+  </nav>
   <body>
-    <header>
-      <nav>
-        <!-- works like <a href="/index.html">Home</a> -->
-        <a href="/">Home</a>
-      </nav>
+    <h1>My Html Learning WowZERS</h1>
+    <div>avocado</div>
+    <div>kiwi</div>
+    <div>banana</div>
+    <span>This is a span that will span </span> <span>Will this span span?</span> <span>Span is fun </span>
+    <p>
+      p represents paragraph
+    </p>
+    <pre>
+      Text in         a pre element
+      is displayed in a fixed-width
+      font, and it preserves
+      both      spaces and
+      line breaks
+    </pre>
+    <h2>Learning Elements</h2>
+    <article>
+    <ul>Things we wanna do 
+      <li>Go to the beach</li>
+      <li>Go to Europe</li>
+      <li>Learn to code</li>
+    </ul>
+      <ol>Things to do in order to achieve those \
+        <li>Get out</li>
+        <li>Save money</li>
+        <li>Study hard</li>
+      </ol>
+    </article>
+    <article>
+      <h2></h2>
+      <table>
+        <thead>
+        <tr>
+            <th colspan="2">First header</th>
+            <th>Second header</th>
+        </tr>
+        <tr>
+          <td>First cell - first row</td>
+          <td>Second cell - first row</td>
+          <td>Third cell - first row</td>
+        </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>First cell - second row</td>
+                <td>Second cell - second row</td>
+                <td>Third cell - second row</td>
+            </tr>
+            <tr>
+              <td>First cell - third row</td>
+              <td rowspan="2">Second cell - third row</td>
+          </tr>
+        </tbody>
+    </table>
+    </article>
+    <header> 
+      <article>
+        <img src="https://picsum.photos/200/300" alt="" />
+
+        <video controls autoplay width="250">
+          <source src="./media/video.mp4"
+                  type="video/webm">
+          Sorry, your browser doesn't support embedded videos.
+         </video>
+         <audio
+              controls autoplay
+              src="/Lab1HTML/media/audio.mp3">
+              Your browser does not support the
+              <code>audio</code> element.
+         </audio>
+
+      
+      </article>
     </header>
     <main>
     </main>

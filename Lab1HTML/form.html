@@ -6,10 +6,30 @@
     <header>
       <nav>
         <!-- works like <a href="/index.html">Home</a> -->
-        <a href="/">Home</a>
+        <a href="./index.html">Home</a>
+        <a href="./form.html">Form</a>
+        <a href="/form.html">Form</a>
+
       </nav>
     </header>
     <main>
+    <form method="POST"action=""http://localhost:3000/profile"> 
+      <label for="fname">First name:</label><br>
+      <input type="text" id="fname" name="fname"><br>
+      <label for="lname">Last name:</label><br>
+      <input type="text" id="lname" name="lname"> <br>
+      <input type="radio" id="check this" name="Tick"> <br>
+      Check if a lil happy <input type="checkbox" name="happycheck" id=""> <br> Check if happy<input type="checkbox" name="happycheck" id="">
+      <br>
+        <select name="HappyLevel" id="mood-select">
+            <option value="">Please choose your happiness lvl</option>
+            <option value="veryhappy">Very Happy!</option>
+            <option value="happy">Happy!</option>
+            <option value="sad">Sad :(</option>
+            <option value="verysad">Very Sad :(((</option>
+       </select> <br>
+       <button type="submit"> Submit your mood !</button>
+    </form>
     </main>
     <footer>Copyright 2021 &copy;</footer>
   </body>
