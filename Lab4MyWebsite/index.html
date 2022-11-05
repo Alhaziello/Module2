@@ -7,6 +7,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,600;1,600&display=swap');
+        @media screen and (max-width: 390px) {
+            .slidingresume {
+                display: none;
+            }
+            .midwrapper{
+                justify-content: center;
+                flex-direction: column;
+            }
+            .centrewrapper{
+                background-repeat: repeat;
+            }
+            
+        }
          *{
             font-family: 'EB Garamond', serif;
          }
@@ -31,7 +44,7 @@
             flex-direction: column;  
         }
 
-        .startnowbutton {
+        .button {
             box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
             background-color: navy;
             border: none;
@@ -43,6 +56,12 @@
             font-size: 16px;
             margin: 4px 2px;
             cursor: pointer;
+        }
+        .button:hover{
+            background-color: forestgreen;
+        }
+        .button:active{
+            background-color: green;
         }
         .midwrapper{
             background-repeat: no-repeat;
@@ -59,7 +78,7 @@
             font-size: 23px;
         }
         .longerpage{
-            height: 8000px;
+            height: 4000px;
         }
     </style>
     <title>Antonio's presentation page </title>
@@ -85,7 +104,7 @@
     </div>
     <section class="centrewrapper">
         <h1> Welcome to my landing page </h1>
-        <button class="startnowbutton">Download kittens!</button>
+        <button class="button">Download kittens!</button>
     </section>
 
     <section class="midwrapper">
