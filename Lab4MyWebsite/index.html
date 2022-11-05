@@ -6,14 +6,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        .webicon{
+        @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,600;1,600&display=swap');
+         *{
+            font-family: 'EB Garamond', serif;
+         }
+        .slidingresume{
             position: sticky;
             height: 0px;
             top: 0px;
             left: 0px;
+            font-size: 19px;
         }
 
         .centrewrapper {
+            background-image: url(./Media/book.avif);
             background-position: 0%;
             background-repeat: no-repeat;
             background-size: cover;
@@ -49,31 +55,59 @@
             flex-direction: row;
         }
         .textmid {
-            margin-left: 190px;
+            margin-left: 230px;
             font-size: 23px;
+        }
+        .longerpage{
+            height: 8000px;
         }
     </style>
     <title>Antonio's presentation page </title>
 </head>
 
 <body>
-    <div class="webicon">
+    <div class="slidingresume">
         <img src="/Lab4MyWebsite/Media/AB-logos_black.png" height="160" width="200" alt="ablogo">
+        <h1>Antonio's <br> Details </h1>
+        <table>
+            <tr>
+              <th>Personal Info</th>
+            </tr>
+            <tr>
+              <td>Phone <br> +642102858306</td>
+            </tr>
+            <tr>
+              <td>Email <br> antonio.bartone@aol.com</td>
+            </tr>
+          </table>
+        
+        
     </div>
     <section class="centrewrapper">
         <h1> Welcome to my landing page </h1>
-        <button class="startnowbutton">Start Now</button>
+        <button class="startnowbutton">Download kittens!</button>
     </section>
 
     <section class="midwrapper">
         <div class="textmid">
-            <h1>Antonio's Resume</h1>
-            <p>HelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHello but</p>
+            <h1>Education</h1>
+            <p>Institute of Data AUT October 2022-April 2023 </p>
+            <ul>
+                <li>Web Dev</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>React</li>
+                <li>node.js</li>
+            </ul>
         </div>
         <div class="textmid">
-            <h1>OH MY GOD </h1>
+            <h1>A career change, why? </h1>
+            <p>I have always wanted to engage with computers </p>
         </div>
     </section>
+    <div class="longerpage">
+
+    </div>
 
 
 </body>
