@@ -25,9 +25,10 @@ body h1{
 .topnavlinks a{
     display: flex;
     align-items: center;
+    justify-content: center;
     text-decoration: none;
     border: 1px solid black;
-    width: 100%;
+    width: 170px;
     height: 20px;
     padding: 10px;
     letter-spacing: 0.3px;
@@ -57,9 +58,9 @@ body h1{
 .dropdown button{
     display: flex;
     align-items: center;
-    justify-items: center;
+    justify-content: center;
     height: 42px;
-    width: 100%;
+    width: 170px;
     padding: 10px;
     background-color: #f29d92;
     border: 1px solid black;        
@@ -78,7 +79,7 @@ body h1{
 .dropdown-content {
     display: none;
     position: absolute;
-    width: auto;
+    width: 170px;
     overflow: hidden;
     background-color: rgba(255,255,255,0.5);
 }
@@ -164,16 +165,47 @@ body h1{
     margin: 10px 10px;
 }
 
-@media only screen and (min-width: 0px) and (max-width: 844px) {
-      .disclaimerbox .navbar .wrapper .loginbox .logininputs{  
+@media only screen and (min-width: 320px) and (max-width: 844px) {
+    .navbar  {
+        display: block;
+        flex-wrap: wrap;
+        color: white;
+    }
+    .wrapper {
+        display: flex;
+        }
+    .topnavlinks  {
         width: 100%;
-        font-size: 16px ;
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        flex-wrap: wrap;
     }
-    .searchbuttons {
+    .topnavlinks a {
+       width: 100%;
+    }
+    
+    .topnavlinks button{
+        border: none;
+        width: 390px;
+        background-color: #f29d92;
+    }
+    .loginbox{
+        width: 100%;
+    }
+    .loginbox .logininputs{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;  
+      }
+    .searchbuttons{
         display: none;
     }
-   }
+    body {
+        background-position: center center;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url(/Media/oyo.jpg);
+      } 
+    }
