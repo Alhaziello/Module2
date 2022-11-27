@@ -1,5 +1,5 @@
 body{
-    background-image: url(/MiniProject/Media/oyo.jpg);
+    background-image: url(/Media/oyo.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -163,3 +163,17 @@ body h1{
     list-style: none;
     margin: 10px 10px;
 }
+
+@media only screen and (min-width: 0px) and (max-width: 844px) {
+      .disclaimerbox .navbar .wrapper .loginbox .logininputs{  
+        width: 100%;
+        font-size: 16px ;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .searchbuttons {
+        display: none;
+    }
+   }
